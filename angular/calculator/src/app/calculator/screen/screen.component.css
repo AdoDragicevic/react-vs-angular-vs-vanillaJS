@@ -1,0 +1,51 @@
+.screen {
+  color: rgb(156, 180, 180);
+  height: 70px;
+  margin-bottom: 10px;
+  line-height: 70px;
+  font-size: 55px;
+  border-radius: 2px;
+  text-align: end;
+  padding: 0 10px;
+  overflow: hidden;
+  font-family: sans-serif;
+  transform: all .8s;
+  position: relative;
+  text-align: end;
+}
+
+.welcome-msg, .value {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.welcome-msg {
+  font-size: 40px;
+  transform: translateX(-250px);
+  animation: moveInFromRight 5s ease-in-out;
+}
+
+.value {
+  opacity: 0;
+  animation: fadeIn .5s ease;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+  padding: 0 13px;
+  width: 100%;
+}
+
+@keyframes moveInFromRight {
+  0% {
+    transform: translateX(250px);
+  }
+  100% {
+    transform: translateX(-250px);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

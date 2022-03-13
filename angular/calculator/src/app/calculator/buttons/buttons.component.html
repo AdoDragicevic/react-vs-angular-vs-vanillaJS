@@ -1,0 +1,48 @@
+<div>
+  <div class="row">
+    <button class="btn bg-gray black" (click)="btnClick('reset')" > AC </button>
+    <button class="btn bg-gray black" (click)="btnClick('-/+')"> 
+      <span>+</span>/<span>-</span>
+    </button>
+    <button class="btn bg-gray black" (click)="btnClick('%')"> % </button>
+    <button 
+      class="btn bg-orange" 
+      [ngClass]="{'highlighted': highlightedBtn['/']}"
+      (click)="btnClick('/')"> 
+      / 
+    </button>
+  </div>
+  <div class="row">
+    <button class="btn bg-dark" (click)="btnClick('7')"> 7 </button>
+    <button class="btn bg-dark" (click)="btnClick('8')"> 8 </button>
+    <button class="btn bg-dark" (click)="btnClick('9')"> 9 </button>
+    <button 
+      class="btn bg-orange"
+      [ngClass]="{'highlighted': highlightedBtn['*']}"
+      (click)="btnClick('*')"> 
+      x 
+    </button>
+  </div>
+  <div class="row">
+    <button class="btn bg-dark" (click)="btnClick('4')"> 4 </button>
+    <button class="btn bg-dark" (click)="btnClick('5')"> 5 </button>
+    <button class="btn bg-dark" (click)="btnClick('6')"> 6 </button>
+    <button 
+      class="btn bg-orange"
+      [ngClass]="{'highlighted': highlightedBtn['/']}"
+      (click)="btnClick('-')"> 
+      - 
+    </button>
+  </div>
+  <div class="row">
+    <button class="btn bg-dark" (click)="btnClick('1')"> 1 </button>
+    <button class="btn bg-dark" (click)="btnClick('2')"> 2 </button>
+    <button class="btn bg-dark" (click)="btnClick('3')"> 3 </button>
+    <button class="btn bg-orange" (click)="btnClick('+')"> + </button>
+  </div>
+  <div class="row">
+    <button class="btn btn--wide bg-dark" (click)="btnClick('0')"> 0 </button>
+    <button class="btn bg-dark" (click)="btnClick('.')" > . </button>
+    <button class="btn bg-orange" (click)="btnClick('=')"> = </button>
+  </div>
+</div>

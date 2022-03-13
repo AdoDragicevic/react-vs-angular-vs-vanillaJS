@@ -1,0 +1,39 @@
+.container {
+  max-width: 310px;
+  width: 100vw;
+  text-align: center;
+  padding: 35px 15px;
+  border-radius: 12px;
+  background-color: #292929;
+  box-shadow: rgba(163, 177, 189, .6) 3px 3px 6px 0px inset, rgba(255, 255, 255, .3) -3px -3px 6px 1px inset;
+  animation: fadeIn .5s ease-in;
+}
+
+.title {
+  color: white;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title::after {
+  content: " . . . ";
+  position: relative;
+  top: -1px;
+  left: 60px;
+  opacity: .3;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,52 @@
+.btn {
+  width: 55px;
+  height: 55px;
+  font-size: 25px;
+  font-weight: 100;
+  border-radius: 100px;
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  outline: none;
+  transform: all .6s ease;
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.55) 0px 50px 100px -20px, rgba(0, 0, 0, 0.6) 0px 30px 60px -30px, rgba(10, 37, 64, 0.6) 0px -2px 6px 0px inset;
+}
+
+.btn:hover {
+  transform: translateY(-.4px);
+  box-shadow: rgba(50, 50, 93, 0.4) 0px 50px 100px -20px, rgba(0, 0, 0, .4) 0px 30px 60px -30px, rgba(10, 37, 64, .5) 0px -2px 6px 0px inset;
+}
+
+.btn:active {
+  transform: translateY(.6px);
+}
+
+.btn--wide {
+  width: 120px;
+}
+
+.bg-orange {
+  background-color: #d48c2e;
+}
+
+.bg-gray {
+  background-color: rgb(179, 175, 169);
+}
+
+.bg-dark {
+  background-color: #4c4e4a;
+}
+
+.font-sm {
+  font-size: 20px;
+}
+
+.black {
+  color: #000;
+}
+
+.highlighted {
+  background-color: rgb(207, 205, 205);
+  color: #d48c2e;
+}
